@@ -12,7 +12,7 @@ namespace UpdateDataFromMotoBlog_V1
     public static class UpdateDataFromMotoBlog_V1
     {
         [FunctionName("UpdateDataFromMotoBlog_V1")]
-        public static void Run([TimerTrigger("1 * * * * *")]TimerInfo myTimer, TraceWriter log)
+        public static void Run([TimerTrigger("0 30 9 * * *")]TimerInfo myTimer, TraceWriter log)
         {
 
             log.Info($"C# Timer trigger GetDataFromBlog function executed at: {DateTime.Now}");
